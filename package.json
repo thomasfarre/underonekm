@@ -41,5 +41,7 @@
     "type": "git",
     "url": "git@github.com:taniarascia/webpack-boilerplate"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mapbox-gl": "^1.12.0"
+  }
 }
