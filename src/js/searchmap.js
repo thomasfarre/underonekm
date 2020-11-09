@@ -5,6 +5,7 @@ const results = document.querySelector(".exemple");
 mapboxgl.accessToken = myAccessToken;
 
 const searchMap = (data) => {
+  input.innerHTML = "";
   const result = data.features[0];
   const [latitude, longitude] = result.center;
   mapboxgl.accessToken = `${myAccessToken}`;
