@@ -3,8 +3,10 @@ import { myAccessToken } from './config';
 
 const results = document.querySelector(".exemple");
 mapboxgl.accessToken = myAccessToken;
+const removeMap = document.querySelector("#map");
 
 const searchMap = (data) => {
+  removeMap.innerHTML = "";
   const result = data.features[0];
   const [latitude, longitude] = result.center;
   mapboxgl.accessToken = `${myAccessToken}`;
