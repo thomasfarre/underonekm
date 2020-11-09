@@ -14,10 +14,6 @@ const searchMap = (data) => {
     center: [latitude, longitude],
     zoom: 12
   });
-  new mapboxgl.Marker()
-    .setLngLat([latitude, longitude])
-    .addTo(map);
-
   map.on("load", (a) => {
     map.addSource("source_circle_500", {
       type: "geojson",
